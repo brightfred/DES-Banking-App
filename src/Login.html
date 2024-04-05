@@ -1,128 +1,84 @@
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+<!DOCTYPE html>
+<html lang="en">
 
-@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css');
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NZ Bank Landing Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
-/* Basic Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+</head>
 
-/* Global Styles */
+<body>
+    <div class="container">
+        <header class="bank-header">
+            <img src="./assests/istockphoto-1382305677-612x612.jpg" alt="NZ Bank Logo" class="logo">
+        </header>
+        <main class="bank-main">
+            <h1 class="bank-welcome-title">Welcome to NZ Bank</h1>
+            <p class="bank-tagline">The bank for everyone.</p>
+            <div class="bank-account-info">
+                <label for="bank-account-number">Account number</label>
+                <div class="input-icon-wrapper">
+                    <input type="text" id="bank-account-number" class="bank-account-input" placeholder="123-***-123-000">
+                    <i class="fa-solid fa-fingerprint"></i>
+                </div>
+                <button class="bank-login-btn">LOG IN</button>
+                <a href="#" class="bank-alt-account-link">If you want to use a different account, click <span class="link-switch-account">here.</span></a>
+            </div>            
+            <label class="bank-balance-switch">
+                <span>Hide Balance</span> 
+                <input type="checkbox" class="bank-hide-balance-checkbox">
+                <span class="bank-slider bank-round"></span>
+            </label>
+            <div class="bank-balance-info">
+                <div class="bank-balance bank-current-balance">
+                    <div class="bank-balance-header">
+                    <i class="fa-solid fa-building-columns"></i>
+                    <span class="bank-balance-description">123-***-****-123-000</span>
+                    </div>
+                    <input type="text" class="bank-balance-input" value="5,324.10 NZD" disabled>
+                </div>
+                <div class="bank-balance bank-savings-balance">
+                    <div class="bank-balance-header">
+                    <i class="fa-solid fa-piggy-bank"></i>
+                    <span class="bank-balance-description">123-***-****-123-000</span>
+                    </div>
+                    <input type="text" class="bank-balance-input" value="12,345.67 NZD" disabled>
+                </div>
 
-:root {
-    --primary-color: #0F3D70;
-    --secondary-color: #0559ce;
-    --tertiary-color: #001533;
-    --fourth-color: #ccc;
-    --fifth-color: #777;
-    --sixth-color: #E4E4E4;
-}
-
-body, input, button, a {
-    font-family: 'Ubuntu', sans-serif;
-}
-
-
-
-/* Landing page */
-
-.landing-page-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    padding: 20px;
-    background-color: #fff;
-    font-family: 'Arial', sans-serif; /* Or the font you're using */
-}
-
-.landing-page-header {
-    margin-bottom: 1rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.landing-page-logo {
-    width: 120px; /* Adjust as necessary */
-}
-
-.welcome-gif{
-    width: 200px;
-    height: 200px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-
-.landing-page-main {
-    text-align: center;
-}
-
-.welcome-msg-lp {
-    font-size: 2rem; /* Adjust as necessary */
-    color: #000;
-    margin-bottom: 1rem;
-}
-
-.landing-page-tagline {
-    font-size: 1rem; /* Adjust as necessary */
-    color: #666;
-    margin-bottom: 2rem;
-}
-
-.landing-page-button {
-    padding: 1rem 2rem;
-    border: none;
-    border-radius: 0.25rem;
-    margin-bottom: 1rem;
-    font-size: 1rem;
-    cursor: pointer;
-    outline: none;
-    width: 100%; /* Makes the button full width */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow */
-    transition: background-color 0.3s ease;
-}
-
-.create-account-btn {
-    background-color: #0056b3; /* Adjust as necessary */
-    color: #fff;
-}
-
-.login-btn {
-    background-color: #f8f8f8; /* Adjust as necessary */
-    color: #333;
-}
-
-/* Adjusts the padding for smaller screens */
-@media (max-width: 600px) {
-    .landing-page-button {
-        padding: 0.8rem 1.5rem;
-    }
-}
-
-/* Adjusts the font size for smaller screens */
-@media (max-width: 400px) {
-    h1 {
-        font-size: 1.5rem;
-    }
-
-    .landing-page-tagline {
-        font-size: 0.9rem;
-    }
-}
+                <span class="bank-balance-description"></span>
+            </div>
 
 
+        </main>
+    </div>
+</body>
+<script>
+    const hideBalanceCheckbox = document.querySelector('.bank-hide-balance-checkbox');
+    const currentBalance = document.querySelector('.bank-current-balance');
+    const savingsBalance = document.querySelector('.bank-savings-balance');
 
+    hideBalanceCheckbox.addEventListener('change', function () {
+        if (hideBalanceCheckbox.checked) {
+            currentBalance.style.display = 'none';
+            savingsBalance.style.display = 'none';
+        } else {
+            currentBalance.style.display = 'flex';
+            savingsBalance.style.display = 'flex';
+        }
+    });
+</script>
+</html>
 
-
-
-
-
-
-/* Login Page*/
+<style scoped>
+    
 .container {
     display: flex;
     flex-direction: column;
@@ -312,10 +268,6 @@ body, input, button, a {
     margin-right: 8px; /* Add some space to the right of the icon */
 }
 
-
-
-/* Responsive Design */
-
 @media (max-width: 600px) {
     .container {
         height: auto;
@@ -324,6 +276,6 @@ body, input, button, a {
     }
 }
 
+/* Add more media queries for additional breakpoints as needed */
 
-
-
+</style>
