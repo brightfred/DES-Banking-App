@@ -36,7 +36,6 @@ body, input, button, a {
     min-height: 100vh;
     padding: 20px;
     background-color: #fff;
-    font-family: 'Arial', sans-serif; /* Or the font you're using */
 }
 
 .landing-page-header {
@@ -87,9 +86,18 @@ body, input, button, a {
 }
 
 .create-account-btn {
-    background-color: #0056b3; /* Adjust as necessary */
-    color: #fff;
+    background-color: var(--primary-color); /* Adjust as necessary */
 }
+
+.create-account-btn-link {
+    color: #fff;
+    text-decoration: none;
+}
+
+.create-account-btn-link :hover {
+    background-color: var(--secondary-color) /* Adjust as necessary */
+}
+
 
 .login-btn {
     background-color: #f8f8f8; /* Adjust as necessary */
@@ -314,7 +322,7 @@ body, input, button, a {
 
 
 
-/* Responsive Design */
+/* Responsive Design login page*/
 
 @media (max-width: 600px) {
     .container {
@@ -325,5 +333,131 @@ body, input, button, a {
 }
 
 
+
+
+/* Create Account Page */
+
+.create-account-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #fff;
+}
+
+.create-account-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    color: #fff;
+}
+
+.back-button {
+    color: white;
+    background-color: var(--primary-color);
+    font-size: 1rem;
+    padding: 0.5rem;
+    border-radius: 50%;
+}
+
+.skip-button{
+    color: var(--primary-color);
+text-decoration: none;
+    font-size: 1rem;
+    padding: 0.5rem;
+    border-radius: 10px;
+}
+
+.create-account-content {
+    flex-grow: 1;
+    padding: 2rem;
+    text-align: center;
+}
+
+.create-account-image {
+    max-width: 80%;
+    height: auto;
+    margin: 0 ;
+}
+
+.C-A-P1-h2 {
+    color: var(--tertiary-color);
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    display: flex;
+}
+
+.C-A-P1-p {
+    display: flex;
+    color: var(--fifth-color);
+    margin-bottom: 2rem;
+    font-size: 1rem;
+}
+
+.C-A-P1-footer{
+    display: flex;
+    justify-content:space-between;
+    margin-top: 4rem;
+    align-items: center;
+}
+
+.indicator-dots {
+    display: flex;
+    justify-content: center;
+    margin: 2rem 0;
+}
+
+.dot {
+    height: 10px;
+    width: 10px;
+    background-color: var(--fourth-color);
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.dot.active {
+    background-color: var(--secondary-color);
+}
+
+.next-button {
+    padding: 1rem;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    
+    text-align: center;
+    display: flex;
+    align-content: center;
+    
+}
+
+.next-button:hover {
+    background-color: var(--secondary-color);
+}
+
+@media (max-width: 768px) {
+    .create-account-header {
+        padding: 1rem 0.5rem;
+    }
+
+    .create-account-image {
+        max-width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    .create-account-content {
+        padding: 1rem;
+    }
+
+    .next-button {
+        padding: 0.8rem 3rem;
+    }
+}
 
 
