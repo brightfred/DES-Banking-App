@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+    <div class="dashboard-container">
+        <!-- Dashboard Header -->
+        <header class="dashboard-header">
+            <a href="Login.html" class="dashboard-logout-link"><i class="fa-solid fa-right-from-bracket"></i> Log
+                out</a>
+
+
+        </header>
+        <img src="./assests/istockphoto-1382305677-612x612.jpg" alt="NZ Bank" class="dashboard-logo">
+
+
+        <!-- Welcome Section -->
+        <section class="dashboard-welcome">
+            <Div class="dashboard-user">
+                <img src="./assests/ali.png" alt="User Avatar" class="dashboard-user-avatar">
+            </Div>
+            <div class="dashboard-user-welcome-box">
+                <h2>Hello Ali</h2>
+                <p>Good morning, How can we help you today?</p>
+            </div>
+        </section>
+
+        <!-- Account Summary Section -->
+        <section class="account-summary">
+            <div class="account-card joint-account">
+                <div class="account-info">
+
+                    <div>
+                        <p class="dashboard-account-type">Joint Account</p>
+                        <p class="dashboard-account-number">123-***-***-123-000</p>
+                    </div>
+                </div>
+                <div class="account-balance">
+                    <p>5,324.10 NZD</p>
+                </div>
+                <div class="dashboard-indicator-dots">
+                    <span class="dot active"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+            </div>
+            <!-- Repeat for other accounts if necessary -->
+        </section>
+        <div class="action-box-1">
+            <div class="action-item-transfer">
+                <i class="fa-solid fa-money-bill-transfer"></i>
+                <span class="transfer-txt">Transfer Money</span>
+            </div>
+            <div class="action-item-payee">
+                <i class="fa-solid fa-file-invoice-dollar"></i>
+                <span class="payee-txt">Payee</span>
+            </div>
+        </div>
+
+        <div class="dashboard-bank-balance-info">
+            <div class="bank-balance bank-current-balance">
+                <div class="bank-balance-header">
+                    <i class="fa-solid fa-building-columns"></i>
+                    <span class="bank-balance-description">123-***-****-123-000</span>
+                </div>
+                <input type="text" class="bank-balance-input" value="5,324.10 NZD" disabled>
+            </div>
+            <div class="bank-balance bank-savings-balance">
+                <div class="bank-balance-header">
+                    <i class="fa-solid fa-piggy-bank"></i>
+                    <span class="bank-balance-description">123-***-****-123-000</span>
+                </div>
+                <input type="text" class="bank-balance-input" value="12,345.67 NZD" disabled>
+            </div>
+
+            <span class="bank-balance-description"></span>
+        </div>
+
+        <!-- Actions Section -->
+        <section class="dashboard-actions">
+            <div class="action-item">
+                <i class="fa-solid fa-wallet"></i>
+                <span>Save for an emergency</span>
+                <i class="fa-solid fa-chevron-right"></i>
+            </div>
+            <div class="action-item">
+                <i class="fa-solid fa-money-bill-trend-up"></i>
+                <span>Invest your money</span>
+                <i class="fa-solid fa-chevron-right"></i>
+            </div>
+        </section>
+
+        <!-- Navigation Bar -->
+        <nav class="dashboard-nav">
+            <a href="#" class="nav-item active">
+                <i class="fa-solid fa-house"></i>
+                <span>Home</span>
+            </a>
+            <a href="#" class="nav-item">
+                <i class="fa-solid fa-chart-pie"></i>
+                <span>Save</span>
+            </a>
+            <a href="#" class="nav-item">
+                <i class="fa-solid fa-briefcase"></i>
+                <span>Portfolio</span>
+            </a>
+            <a href="#" class="nav-item">
+                <i class="fa-solid fa-sack-dollar"></i>
+                <span>Rewards</span>
+            </a>
+            <a href="#" class="nav-item">
+                <i class="fa-solid fa-circle-user"></i>
+                <span>Profile</span>
+            </a>
+        </nav>
+    </div>
+</body>
+
+</html>

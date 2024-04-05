@@ -7,6 +7,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-decoration: none;
 }
 
 /* Global Styles */
@@ -32,10 +33,17 @@ body, input, button, a {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    min-height: 100vh;
+    min-height: 80vh;
     padding: 20px;
     background-color: #fff;
+    max-width: 400px;
+    max-height: 800px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    margin: 0 auto;
+    align-items: center;
+    border-radius: 0.5rem;
+    margin-top: 2rem;
 }
 
 .landing-page-header {
@@ -101,7 +109,11 @@ body, input, button, a {
 
 .login-btn {
     background-color: #f8f8f8; /* Adjust as necessary */
+}
+
+.login-account-btn-link{
     color: #333;
+    text-decoration: none;
 }
 
 /* Adjusts the padding for smaller screens */
@@ -134,13 +146,22 @@ body, input, button, a {
 .container {
     display: flex;
     flex-direction: column;
-    height: 100vh;
     justify-content: center;
-    align-items: center;
+    min-height: 80vh;
     padding: 20px;
-    background-color: #fff; /* Replace with the desired background color */
+    background-color: #fff;
+    max-width: 400px;
+    max-height: 800px;
     overflow-x: hidden;
+    overflow-y: auto;
+    margin: 0 auto;
+    align-items: center;
+    border-radius: 0.5rem;
+    margin-top: 2rem;
+
 }
+
+
 
 .bank-header {
     margin-bottom: 2rem;
@@ -209,6 +230,13 @@ body, input, button, a {
     cursor: pointer;
 }
 
+.link-dashboard{
+    color: #fff;
+    text-decoration: none;
+    font-size: 0.9rem;
+    margin-top: 1rem;
+}
+
 .bank-balance-info {
     display: flex;
     flex-direction: row;
@@ -254,31 +282,40 @@ body, input, button, a {
     align-items: center;
     justify-content: center;
     margin-bottom: 1rem;
+    
 }
 
 .bank-hide-balance-checkbox {
     display: none; /* Hide the checkbox */
 }
 
+.bank-balance-switch-txt {
+    font-size: 0.8rem;
+    color: var(--tertiary-color);
+    margin-right: 0.5rem;
+}
+
 .bank-slider {
     position: relative;
     display: block;
-    width: 3rem; /* Width of the slider */
+    width: 3.3rem; /* Width of the slider */
     height: 1.75rem; /* Height of the slider */
     background-color: #ccc;
     border-radius: 1rem;
     cursor: pointer;
     transition: background-color 0.2s;
+    border: 2.6px solid var(--tertiary-color);
 }
 
 .bank-slider.bank-round:before {
     position: absolute;
     content: '';
-    height: 1.25rem;
-    width: 1.25rem;
-    left: 0.25rem;
-    bottom: 0.25rem;
+    height: 1.05rem;
+    width: 1.05rem;
+    left: 0.06rem;
+    top: 0.04rem;
     background-color: white;
+    border: 2.6px solid var(--tertiary-color);
     transition: transform 0.2s;
     border-radius: 50%;
 }
@@ -340,8 +377,19 @@ body, input, button, a {
 .create-account-container {
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
+    justify-content: center;
+    min-height: 80vh;
+    padding: 20px;
     background-color: #fff;
+    max-width: 400px;
+    max-height: 800px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    margin: 0 auto;
+    border-radius: 0.5rem;
+    margin-top: 2rem;
+    border-radius: 24px; /* rounded corners like in the wireframe */
+    box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.15); /* shadow effect */
 }
 
 .create-account-header {
@@ -418,6 +466,8 @@ text-decoration: none;
 
 .dot.active {
     background-color: var(--secondary-color);
+    width: 30px;
+    border-radius: 20px;
 }
 
 .next-button {
@@ -461,3 +511,274 @@ text-decoration: none;
 }
 
 
+/* Create Account Page 2 */
+
+
+
+
+/*Dashboard*/
+
+.dashboard-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* take full height of the viewport */
+    background-color: #fff;
+    max-width: 400px; /* max-width to mimic the wireframe size */
+    margin: 0 auto; /* center the dashboard container */
+    border-radius: 24px; /* rounded corners like in the wireframe */
+    box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.15); /* shadow effect */
+    overflow-x: hidden;
+}
+
+.dashboard-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    color: var(--primary-color);
+    border-top-left-radius: 24px; /* continue the border-radius of the container */
+    border-top-right-radius: 24px;
+}
+
+.dashboard-logout-link {
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.fa-right-from-bracket {
+    margin-right: 0.5rem; /* space between icon and text */
+    rotate: 180deg; /* rotate the icon */
+    font-size: 1.6rem; /* slightly bigger icon */
+}
+
+.dashboard-logo {
+    width: 140px; /* Adjust the size to match wireframe */
+    height: auto;
+    align-self: center;
+}
+
+.dashboard-user{
+    margin-right: 1rem;
+}
+
+.dashboard-user-avatar {
+    width: 80px; /* size as shown in wireframe */
+    height: 80px;
+    border-radius: 50%;
+}
+
+.dashboard-welcome {
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 1rem;
+    gap: 1rem;
+}
+
+.dashboard-welcome h2 {
+    color: var(--primary-color);
+    font-size: 1.2rem; /* slightly bigger for visibility */
+    margin-top: 1rem; /* give some space from the header */
+}
+
+.dashboard-account-type {
+    color: #85B7FF;
+    margin-top: 0.5rem; /* space between the title and paragraph */
+    margin-bottom: .5rem; /* space between the paragraph and the next element */
+    font-size: 1.2rem; /* match font size in the wireframe */
+}
+
+.dashboard-account-number {
+    color: #fff;
+    font-size: 0.8rem; /* smaller font size for account number */
+    margin-bottom: 1rem; /* space between the paragraph and the next element */
+}
+
+.account-summary {
+    background-color: var(--primary-color);
+    margin: 1rem; /* match spacing as per wireframe */
+    padding: 1rem;
+    border-radius: 12px; /* rounded corners for the cards */
+    color: white;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative; /* for absolute positioning of elements inside */
+}
+
+.account-card {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center;
+    text-align: center;
+}
+
+.account-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.account-balance p {
+    font-weight:500;
+    font-size: 2rem; /* larger font size for balance */
+    color: #fff;
+    margin-bottom: 0.7rem; /* space between balance and description */
+}
+
+.dashboard-bank-balance-info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-left: .8rem;
+
+}
+
+
+.dashboard-actions {
+    display: flex;
+    flex-direction: column ;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 1rem;
+    margin-bottom: 7rem; /* space between the account summary and actions */
+    margin-left: .5rem;
+    margin-right: .5rem;
+}
+
+.action-item {
+    background: white;
+    padding: 1rem;
+    border-radius: 12px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 23rem;
+}
+
+.fa-wallet {
+    color: #0066F6;
+    font-size: 2rem;
+    background-color: #E4E4E4;
+    padding: .6rem;
+    border-radius: 50%;
+}
+
+.fa-money-bill-trend-up{
+    color: #0066F6;
+    font-size: 2rem;
+    background-color: #E4E4E4;
+    padding: .6rem;
+    border-radius: 50%;
+}
+
+.action-item-payee {
+    background: #FFF1D1;
+    padding: 1rem;
+    margin-bottom: 1rem; /* space between action items */
+    border-radius: 12px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    text-align: center;
+    width: 11rem;
+    height: 4.5rem;
+}
+
+.fa-file-invoice-dollar{
+    color: #FFB800;
+    font-size: 2.5rem;
+}
+
+.payee-txt{
+    color: #5E5E5E;
+    font-size: 1rem;
+    margin-left: 2rem;
+}
+
+.action-item-transfer {
+    background: #D5F6EE;
+    padding: 1rem;
+    margin-bottom: 1rem; /* space between action items */
+    border-radius: 12px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    text-align: center;
+    width: 11rem;
+    height: 4.5rem;
+}
+
+.fa-money-bill-transfer{
+    color: #36C4A2;
+    font-size: 2rem;
+}
+
+.transfer-txt{
+    color: #5E5E5E;
+    font-size: 1rem;
+    margin-left: .1rem;
+}
+
+.action-box-1{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+
+
+
+.action-item i {
+    margin-right: 1rem; /* space between the icon and text */
+}
+
+.dashboard-nav {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1rem 0;
+    position: fixed; /* fixed to the bottom */
+    bottom: 0;
+    left: 0;
+    width: 100%; /* full width */
+    background-color: white;
+    box-shadow: 0px -4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.nav-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 0.8rem; /* smaller font size for nav items */
+    color: var(--fifth-color);
+}
+
+.nav-item.active, .nav-item:hover {
+    color: var(--primary-color);
+}
+
+.nav-item i {
+    font-size: 1.5rem;
+    margin-bottom: 0.3rem;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .dashboard-container {
+        max-width: 100%; /* full width on smaller screens */
+        margin: 0;
+        border-radius: 0; /* no rounded corners on small devices */
+    }
+    .dashboard-header {
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+    }
+    .dashboard-nav {
+        bottom: 0; /* Ensure nav stays at the bottom */
+        left: 0;
+        right: 0; /* Ensure nav extends full width */
+    }
+}
