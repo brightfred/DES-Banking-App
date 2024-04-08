@@ -33,11 +33,11 @@ body, input, button, a {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    min-height: 80vh;
+    min-height: 60vh;
     padding: 20px;
     background-color: #fff;
     max-width: 400px;
-    max-height: 800px;
+    max-height: 700px;
     overflow-x: hidden;
     overflow-y: auto;
     margin: 0 auto;
@@ -555,7 +555,7 @@ text-decoration: none;
 }
 
 .dashboard-logo {
-    width: 140px; /* Adjust the size to match wireframe */
+    width: 90px; /* Adjust the size to match wireframe */
     height: auto;
     align-self: center;
 }
@@ -573,7 +573,7 @@ text-decoration: none;
 .dashboard-welcome {
     display: flex;
     flex-direction: row-reverse;
-    padding: 1rem;
+margin: 0 .5rem 0 .5rem;
     gap: 1rem;
 }
 
@@ -585,7 +585,7 @@ text-decoration: none;
 
 .dashboard-account-type {
     color: #85B7FF;
-    margin-top: 0.5rem; /* space between the title and paragraph */
+
     margin-bottom: .5rem; /* space between the paragraph and the next element */
     font-size: 1.2rem; /* match font size in the wireframe */
 }
@@ -621,9 +621,10 @@ text-decoration: none;
 
 .account-balance p {
     font-weight:500;
-    font-size: 2rem; /* larger font size for balance */
+    font-size: 1.2rem; /* larger font size for balance */
     color: #fff;
     margin-bottom: 0.7rem; /* space between balance and description */
+    padding: 0;
 }
 
 .dashboard-bank-balance-info {
@@ -689,12 +690,12 @@ text-decoration: none;
 
 .fa-file-invoice-dollar{
     color: #FFB800;
-    font-size: 2.5rem;
+    font-size: 2rem;
 }
 
 .payee-txt{
     color: #5E5E5E;
-    font-size: 1rem;
+    font-size: .9rem;
     margin-left: 2rem;
 }
 
@@ -713,12 +714,12 @@ text-decoration: none;
 
 .fa-money-bill-transfer{
     color: #36C4A2;
-    font-size: 2rem;
+    font-size: 1.6rem;
 }
 
 .transfer-txt{
     color: #5E5E5E;
-    font-size: 1rem;
+    font-size: .9rem;
     margin-left: .1rem;
 }
 
@@ -727,8 +728,17 @@ text-decoration: none;
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
+    margin: 0 1rem 0 1rem;
+    gap: 1rem;
 }
 
+.bank-balance-input{
+    font-size: .9rem;
+    border: none;
+    background: none;
+    margin-bottom: 0.25rem;
+    text-align: center;
+}
 
 
 
