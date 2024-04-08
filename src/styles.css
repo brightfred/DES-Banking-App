@@ -54,7 +54,7 @@ body, input, button, a {
 }
 
 .landing-page-logo {
-    width: 120px; /* Adjust as necessary */
+    width: 120px; 
 }
 
 .welcome-gif{
@@ -69,13 +69,13 @@ body, input, button, a {
 }
 
 .welcome-msg-lp {
-    font-size: 2rem; /* Adjust as necessary */
+    font-size: 2rem; 
     color: #000;
     margin-bottom: 1rem;
 }
 
 .landing-page-tagline {
-    font-size: 1rem; /* Adjust as necessary */
+    font-size: 1rem; 
     color: #666;
     margin-bottom: 2rem;
 }
@@ -88,13 +88,13 @@ body, input, button, a {
     font-size: 1rem;
     cursor: pointer;
     outline: none;
-    width: 100%; /* Makes the button full width */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow */
+    width: 100%; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
     transition: background-color 0.3s ease;
 }
 
 .create-account-btn {
-    background-color: var(--primary-color); /* Adjust as necessary */
+    background-color: var(--primary-color); 
 }
 
 .create-account-btn-link {
@@ -103,12 +103,12 @@ body, input, button, a {
 }
 
 .create-account-btn-link :hover {
-    background-color: var(--secondary-color) /* Adjust as necessary */
+    background-color: var(--secondary-color);
 }
 
 
 .login-btn {
-    background-color: #f8f8f8; /* Adjust as necessary */
+    background-color: #f8f8f8; 
 }
 
 .login-account-btn-link{
@@ -168,24 +168,24 @@ body, input, button, a {
 }
 
 .logo {
-    width: 260px; /* You may adjust this accordingly */
+    width: 260px; 
 }
 
 .bank-main {
     width: 100%;
-    max-width: 340px; /* Adjust the max-width for different screen sizes */
+    max-width: 340px;
 }
 
 .bank-welcome-title {
     font-size: 1.5rem;
     margin-bottom: 0.5rem;
-    color: #333; /* Replace with the desired color */
+    color: #333; 
     text-align: center;
 }
 
 .bank-tagline {
     margin-bottom: 2rem;
-    color: #001533; /* Replace with the desired color */
+    color: #001533; 
     text-align: center;
 }
 
@@ -202,21 +202,21 @@ body, input, button, a {
 .bank-account-input {
     font-size: 1rem;
     padding: 0.5rem;
-    padding-right: 2rem; /* Make room for the icon */
+    padding-right: 2rem; 
     margin-bottom: 1rem;
     border: 1px solid #d2c2c2;
     border-radius: 0.25rem;
     text-align: center;
-    width: 100%; /* Ensure the width fills the container */
+    width: 100%; 
 }
 
 .fa-fingerprint {
     position: absolute;
-    right: 10px; /* Adjust as necessary for proper alignment */
+    right: 10px; 
     top: 35%;
     transform: translateY(-50%);
     color: #0F3D70;
-    font-size: 1.25rem; /* Adjust icon size as needed */
+    font-size: 1.25rem; 
 }
 
 
@@ -286,7 +286,7 @@ body, input, button, a {
 }
 
 .bank-hide-balance-checkbox {
-    display: none; /* Hide the checkbox */
+    display: none; 
 }
 
 .bank-balance-switch-txt {
@@ -298,8 +298,8 @@ body, input, button, a {
 .bank-slider {
     position: relative;
     display: block;
-    width: 3.3rem; /* Width of the slider */
-    height: 1.75rem; /* Height of the slider */
+    width: 3.3rem; 
+    height: 1.75rem; 
     background-color: #ccc;
     border-radius: 1rem;
     cursor: pointer;
@@ -346,15 +346,15 @@ body, input, button, a {
 }
 
 .fa-building-columns {
-    color: #0F3D70; /* Change the color */
-    font-size: 17px; /* Change the icon size */
-    margin-right: 8px; /* Add some space to the right of the icon */
+    color: #0F3D70; 
+    font-size: 17px; 
+    margin-right: 8px; 
 }
 
 .fa-piggy-bank {
-    color: #0F3D70; /* Change the color */
-    font-size: 17px; /* Change the icon size */
-    margin-right: 8px; /* Add some space to the right of the icon */
+    color: #0F3D70; 
+    font-size: 17px; 
+    margin-right: 8px; 
 }
 
 
@@ -388,8 +388,8 @@ body, input, button, a {
     margin: 0 auto;
     border-radius: 0.5rem;
     margin-top: 2rem;
-    border-radius: 24px; /* rounded corners like in the wireframe */
-    box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.15); /* shadow effect */
+    border-radius: 24px; 
+    box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.15); 
 }
 
 .create-account-header {
@@ -521,12 +521,12 @@ text-decoration: none;
 .dashboard-container {
     display: flex;
     flex-direction: column;
-    min-height: 100vh; /* take full height of the viewport */
+    min-height: 100vh;
     background-color: #fff;
-    max-width: 400px; /* max-width to mimic the wireframe size */
-    margin: 0 auto; /* center the dashboard container */
-    border-radius: 24px; /* rounded corners like in the wireframe */
-    box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.15); /* shadow effect */
+    max-width: 400px; 
+    margin: 0 auto; 
+    border-radius: 24px; 
+    box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.15); 
     overflow-x: hidden;
 }
 
@@ -536,7 +536,7 @@ text-decoration: none;
     align-items: center;
     padding: 1rem;
     color: var(--primary-color);
-    border-top-left-radius: 24px; /* continue the border-radius of the container */
+    border-top-left-radius: 24px; 
     border-top-right-radius: 24px;
 }
 
@@ -549,13 +549,13 @@ text-decoration: none;
 }
 
 .fa-right-from-bracket {
-    margin-right: 0.5rem; /* space between icon and text */
-    rotate: 180deg; /* rotate the icon */
-    font-size: 1.6rem; /* slightly bigger icon */
+    margin-right: 0.5rem; 
+    rotate: 180deg; 
+    font-size: 1.6rem; 
 }
 
 .dashboard-logo {
-    width: 90px; /* Adjust the size to match wireframe */
+    width: 90px; 
     height: auto;
     align-self: center;
 }
@@ -565,7 +565,7 @@ text-decoration: none;
 }
 
 .dashboard-user-avatar {
-    width: 80px; /* size as shown in wireframe */
+    width: 80px; 
     height: 80px;
     border-radius: 50%;
 }
@@ -579,36 +579,36 @@ margin: 0 .5rem 0 .5rem;
 
 .dashboard-welcome h2 {
     color: var(--primary-color);
-    font-size: 1.2rem; /* slightly bigger for visibility */
-    margin-top: 1rem; /* give some space from the header */
+    font-size: 1.2rem; 
+    margin-top: 1rem; 
 }
 
 .dashboard-account-type {
     color: #85B7FF;
 
-    margin-bottom: .5rem; /* space between the paragraph and the next element */
-    font-size: 1.2rem; /* match font size in the wireframe */
+    margin-bottom: .5rem; 
+    font-size: 1.2rem; 
 }
 
 .dashboard-account-number {
     color: #fff;
-    font-size: 0.8rem; /* smaller font size for account number */
-    margin-bottom: 1rem; /* space between the paragraph and the next element */
+    font-size: 0.8rem; 
+    margin-bottom: 1rem; 
 }
 
 .account-summary {
     background-color: var(--primary-color);
-    margin: 1rem; /* match spacing as per wireframe */
+    margin: 1rem; 
     padding: 1rem;
-    border-radius: 12px; /* rounded corners for the cards */
+    border-radius: 12px; 
     color: white;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    position: relative; /* for absolute positioning of elements inside */
+    position: relative; 
 }
 
 .account-card {
     display: flex;
-    flex-direction: column; /* Stack elements vertically */
+    flex-direction: column; 
     align-items: center;
     text-align: center;
 }
@@ -621,9 +621,9 @@ margin: 0 .5rem 0 .5rem;
 
 .account-balance p {
     font-weight:500;
-    font-size: 1.2rem; /* larger font size for balance */
+    font-size: 1.2rem; 
     color: #fff;
-    margin-bottom: 0.7rem; /* space between balance and description */
+    margin-bottom: 0.7rem; 
     padding: 0;
 }
 
@@ -643,7 +643,7 @@ margin: 0 .5rem 0 .5rem;
     align-items: center;
     justify-content: space-evenly;
     gap: 1rem;
-    margin-bottom: 7rem; /* space between the account summary and actions */
+    margin-bottom: 7rem; 
     margin-left: .5rem;
     margin-right: .5rem;
 }
@@ -678,7 +678,7 @@ margin: 0 .5rem 0 .5rem;
 .action-item-payee {
     background: #FFF1D1;
     padding: 1rem;
-    margin-bottom: 1rem; /* space between action items */
+    margin-bottom: 1rem; 
     border-radius: 12px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     display: flex;
@@ -702,7 +702,7 @@ margin: 0 .5rem 0 .5rem;
 .action-item-transfer {
     background: #D5F6EE;
     padding: 1rem;
-    margin-bottom: 1rem; /* space between action items */
+    margin-bottom: 1rem; 
     border-radius: 12px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     display: flex;
@@ -743,7 +743,7 @@ margin: 0 .5rem 0 .5rem;
 
 
 .action-item i {
-    margin-right: 1rem; /* space between the icon and text */
+    margin-right: 1rem; 
 }
 
 .dashboard-nav {
@@ -753,7 +753,7 @@ margin: 0 .5rem 0 .5rem;
     position: fixed; /* fixed to the bottom */
     bottom: 0;
     left: 0;
-    width: 100%; /* full width */
+    width: 100%; 
     background-color: white;
     box-shadow: 0px -4px 6px rgba(0, 0, 0, 0.1);
 }
@@ -762,7 +762,7 @@ margin: 0 .5rem 0 .5rem;
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-size: 0.8rem; /* smaller font size for nav items */
+    font-size: 0.8rem; 
     color: var(--fifth-color);
 }
 
@@ -778,7 +778,7 @@ margin: 0 .5rem 0 .5rem;
 /* Responsive styles */
 @media (max-width: 768px) {
     .dashboard-container {
-        max-width: 100%; /* full width on smaller screens */
+        max-width: 100%; 
         margin: 0;
         border-radius: 0; /* no rounded corners on small devices */
     }
@@ -789,6 +789,6 @@ margin: 0 .5rem 0 .5rem;
     .dashboard-nav {
         bottom: 0; /* Ensure nav stays at the bottom */
         left: 0;
-        right: 0; /* Ensure nav extends full width */
+        right: 0; 
     }
 }
